@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
 	/* parse argv[1] as the largest process id */
-	if (argc < 2 || init_peterson(argv[1] == FALSE)) {
+	if (argc < 2 || !init_peterson(argv[1])) {
 		exit(EXIT_FAILURE);
 	}
 
