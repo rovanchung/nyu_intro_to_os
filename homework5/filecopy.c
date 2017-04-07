@@ -54,8 +54,9 @@ int main(int argc, char *argv[]) {
 	close(in_fd); 
 	close(out_fd);
 
-	if (rd_count == 0)
+	if (rd_count == 0) {
 		exit(0);
+	}
 	else {
 		exit(5);
 	}
